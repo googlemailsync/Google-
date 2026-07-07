@@ -1,3 +1,1 @@
 **Disclaimer:** This repository is provided solely for educational, research, and authorized security testing purposes. It is not intended to promote, facilitate, or encourage any unauthorized, illegal, or malicious activity. By accessing or using this repository, you agree that you are solely responsible for your actions and for complying with all applicable laws and regulations. The author assumes no responsibility or liability for any misuse, damages, or legal consequences resulting from the use or modification of the contents of this repository.
-
-![Uploading e6a07cb2-491e-4c37-86a4-a937898c9520.png…]()
