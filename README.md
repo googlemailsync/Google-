@@ -1,0 +1,1 @@
+**Disclaimer:** This repository is provided for educational and research purposes only. I am not responsible for any misuse, illegal activity, or damages resulting from the use of this code. Users are solely responsible for ensuring their use complies with all applicable laws and regulations.
