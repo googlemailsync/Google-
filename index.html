@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="google-logo">
+        
+        <h2>Sign in</h2>
+        <p class="sub-text">Use your Google Account</p>
+        
+        <form id="loginForm">
+            <!-- Email Field with Suffix -->
+            <div class="form-group">
+                <label for="username">Email or phone</label>
+                <input type="text" id="username" required placeholder="Enter your username">
+                <!-- The Glass Effect Suffix -->
+                <span class="suffix-text">@gmail.com</span>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Enter your password</label>
+                <input type="password" id="password" required placeholder="Enter your password">
+            </div>
+
+            <a href="#" class="links">Forgot email?</a>
+
+            <div class="button-row">
+                <button type="submit">Next</button>
+            </div>
+            
+            <div id="statusMessage" class="status-message"></div>
+        </form>
+
+        <div class="footer-links">
+            <span class="create-account">Create account</span>
+            <span class="divider">|</span>
+            <span class="guest-mode">Not your computer? Use Guest mode</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

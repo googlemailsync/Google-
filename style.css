@@ -1,0 +1,208 @@
+/* Google Material Design - FIXED SUFFIX POSITION */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 48px 40px 36px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 450px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.google-logo {
+    width: 75px;
+    height: auto;
+    margin-bottom: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.sub-text {
+    font-size: 16px;
+    color: #202124;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+label {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-size: 16px;
+    color: #5f6368;
+    background-color: white;
+    padding: 0 4px;
+    transition: all 0.2s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    /* Increased padding-right to ensure space for suffix */
+    padding-right: 90px; 
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    color: #202124;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    cursor: text;
+    line-height: 1.5; /* Helps vertical alignment */
+}
+
+/* Floating Label Logic */
+input:focus + label,
+input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #1a73e8;
+    font-weight: 500;
+    background-color: white;
+}
+
+input:focus {
+    border: 2px solid #1a73e8;
+    padding: 12px 13px;
+    /* Recalculate padding-right to match the 1px border reduction */
+    padding-right: 89px; 
+}
+
+/* --- THE GLASS EFFECT SUFFIX (FIXED) --- */
+.suffix-text {
+    position: absolute;
+    right: 14px;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Perfect vertical center */
+    font-size: 16px;
+    color: #5f6368;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque */
+    padding: 0 6px;
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 10; /* HIGH Z-INDEX to sit ON TOP of input border */
+    user-select: none;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Adjust suffix when input is focused (optional: move it up slightly or keep static) */
+/* Google usually keeps it static at the bottom right. */
+input:focus ~ .suffix-text {
+    /* If you want it to stay static, do nothing. 
+       If you want it to move up with the label, uncomment: */
+    /* top: -10px; transform: none; font-size: 12px; color: #1a73e8; */
+}
+
+.button-row {
+    text-align: right;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #1557b0;
+    box-shadow: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.links {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.status-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #1a73e8;
+    min-height: 20px;
+    text-align: left;
+}
+
+.success { color: #1e8e3e; }
+.error { color: #d93025; }
+
+.footer-links {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #1a73e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.create-account {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    color: #dadce0;
+}
+
+.guest-mode {
+    color: #5f6368;
+}
+
+.guest-mode:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
